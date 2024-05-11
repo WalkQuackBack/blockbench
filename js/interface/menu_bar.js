@@ -13,7 +13,7 @@ class BarMenu extends Menu {
 		this.icon = options.icon;
 		this.name = tl(options.name || `menu.${id}`);
 		this.label = Interface.createElement('li', {class: 'menu_bar_point'}, this.name);
-		this.label.addEventListener('click', (event) => {
+		this.label.addEventListener('mouseenter', (event) => {
 			if (open_menu === this) {
 				this.hide()
 			} else {
